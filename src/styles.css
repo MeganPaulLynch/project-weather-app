@@ -21,6 +21,10 @@ img {
   width: 60px;
   padding-right: 5px;
 }
+small {
+  padding-left: 6px;
+  font-size: 14px;
+}
 .card {
   margin-top: 30px;
   max-width: 630px;
@@ -29,43 +33,39 @@ img {
 }
 .card-body {
   margin-top: 10px;
-  padding-right: 40px;
+  padding-right: 30px;
 }
 .form-control {
   width: 30%;
   display: inline;
 }
-.measure {
-  position: relative;
-  left: 37px;
-  font-size: 14px;
-  color: #253761;
-}
 .detail {
   border-top: 2px solid blue;
   padding-top: 10px;
   margin-left: 6px;
+  font-size: 14px;
+  color: #253761;
 }
 .col-4 {
+  margin-top: 20px;
   text-align: center;
 }
 .main {
   color: #202124;
   line-height: 60px;
-  font-size: 48px;
+  font-size: 50px;
 }
 .unit {
   font-size: 14px;
   color: #878787;
 }
+.col-3 {
+  border-left: 2px solid #878787;
+}
 .area {
-  border: solid;
-  border-width: 2px;
-  border-color: #878787;
-  border-radius: 20px;
   padding: 5px 8px;
   margin: 5px 8px;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   color: #5a6275;
 }

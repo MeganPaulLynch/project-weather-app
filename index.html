@@ -16,51 +16,61 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <div class="mb-3">
-            <form id="searchForm">
-              <input
-                type="text"
-                class="form-control"
-                id="explore"
-                placeholder="Enter a city"
-                autocomplete="off"
-                autofocus
-              />
-              <input type="submit" class="btn btn-primary" value="Search" />
-            </form>
-          </div>
-          <div class="row">
-            <div class="col-5">
-              <h1>London</h1>
-              <p><i>Mostly sunny</i></p>
-              <h3>
-                <span id="update">Monday <br />16:13</span>
-              </h3>
-              <div class="row detail">
-                <div class="col-12 measure">Rain: 16%</div>
-                <div class="col-12 measure">Wind: 11mph</div>
-                <div class="col-12 measure">Humidity: 40%</div>
+      <div class="box">
+        <div class="card">
+          <div class="card-body">
+            <div class="mb-3">
+              <form id="searchForm">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="explore"
+                  placeholder="Enter a city"
+                  autocomplete="off"
+                  autofocus
+                />
+                <input type="submit" class="btn btn-primary" value="Search" />
+              </form>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <h1>London</h1>
+                <p><i>Mostly sunny</i></p>
+                <h3>
+                  <span id="update">Monday <br />16:13</span>
+                </h3>
+                <div class="row detail">
+                  <div class="col-12 measure">Rain: 16%</div>
+                  <div class="col-12 measure">Wind: 11mph</div>
+                  <div class="col-12 measure">Humidity: 40%</div>
+                </div>
               </div>
-            </div>
-            <div class="col-4">
-              <span id="weatherMeasure"> 22</span>
-              <span class="unit" id="customise">
-                <a href="#" id="celsius">Cº</a></span
-              >
-            </div>
-            <div class="col-3">
-              <div class="row">
-                <div class="col-12 area">Tuesday 12º/14º 🌥</div>
-                <div class="col-12 area">Wednesday 18º/13º 🌦</div>
-                <div class="col-12 area">Thursday 20º/15º ☀️</div>
-                <div class="col-12 area">Friday 21º/17º 🌧</div>
-                <div class="col-12 area">Saturday 19º/12º ☁️</div>
+              <div class="col-4">
+                <span id="weatherMeasure"> 22</span>
+                <span class="unit" id="customise">
+                  <a href="#" id="celsius">Cº</a></span
+                >
+              </div>
+              <div class="col-3">
+                <div class="row">
+                  <div class="col-12 area">Tuesday 12º/14º 🌥</div>
+                  <div class="col-12 area">Wednesday 18º/13º 🌦</div>
+                  <div class="col-12 area">Thursday 20º/15º ☀️</div>
+                  <div class="col-12 area">Friday 21º/17º 🌧</div>
+                  <div class="col-12 area">Saturday 19º/12º ☁️</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <small>
+          Coded by Megan Paul Lynch
+          <a
+            href="https://github.com/MeganPaulLynch/project-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+        </small>
       </div>
     </div>
     <script src="src/app.js"></script>

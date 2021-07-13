@@ -1,8 +1,14 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 h1,
 h3,
 p {
   text-align: center;
   color: #5a6275;
+}
+h1 {
+  margin-top: 20px;
 }
 h3 {
   font-size: 22px;
@@ -15,11 +21,12 @@ img {
 .card {
   margin-top: 30px;
   max-width: 630px;
+  border-radius: 5px;
   box-shadow: 1px 1px 5px rgb(0 0 0 / 8%);
 }
 .card-body {
   margin-top: 10px;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 .form-control {
   width: 30%;
@@ -27,7 +34,7 @@ img {
 }
 .measure {
   position: relative;
-  left: 12px;
+  left: 28px;
   font-size: 14px;
   color: #253761;
 }

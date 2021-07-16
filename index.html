@@ -36,14 +36,17 @@
               <div class="col-5">
                 <h1>London</h1>
                 <ul>
-                  <li id="update">Monday 16:13</li>
-                  <li>Mostly sunny</li>
+                  <li class="day" id="update">Monday 16:13</li>
+                  <li id="description">Mostly sunny</li>
                 </ul>
                 <div class="clear-fix">
                   <div class="row detail">
-                    <div class="col-12 float-left">Rain: 16%</div>
-                    <div class="col-12 float-left">Wind: 11mph</div>
-                    <div class="col-12 float-left">Humidity: 40%</div>
+                    <div class="col-12 float-left">
+                      Wind: <span id="windElement"></span>kph
+                    </div>
+                    <div class="col-12 float-left">
+                      Humidity: <span id="humidityElement"></span>%
+                    </div>
                   </div>
                 </div>
               </div>

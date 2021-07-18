@@ -1,3 +1,24 @@
+function formatDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let currentDay = days[date.getDay()];
+  let currentHour = date.getHours();
+  if (currentHour < 10) {
+    currentHour = `0${currentHour}`;
+  }
+  let currentMinutes = date.getMinutes();
+  if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`;
+  }
+  return `${currentDay} ${currentHour}:${currentMinutes}`;
+}
 function displayTemperature(response) {
   console.log(response);
   let tempC = document.querySelector("#weatherMeasure");
@@ -5,6 +26,7 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#windElement");
   let humidityElement = document.querySelector("#humidityElement");
+  let iconElement = document.querySelector("#icon");
   tempC.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -25,4 +47,7 @@ function search(event) {
 
 let findCity = document.querySelector("#searchForm");
 findCity.addEventListener("submit", search);
+let formattedDate = document.querySelector("#update");
+let date = new Date();
+formattedDate.innerHTML = formatDate(date);
 searchCity("London");

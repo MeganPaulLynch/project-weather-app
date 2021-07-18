@@ -17,4 +17,12 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
   axios.get(apiUrl).then(displayTemperature);
 }
-searchCity("Seoul");
+function search(event) {
+  event.preventDefault();
+  let city = document.querySelector("#explore").value;
+  searchCity(city);
+}
+
+let findCity = document.querySelector("#searchForm");
+findCity.addEventListener("submit", search);
+searchCity("London");

@@ -45,11 +45,11 @@ a {
   font-size: 14px;
   color: #253761;
 }
-.col-5 {
+.col-4 {
   margin-top: 20px;
   padding: 0;
 }
-.col-4 {
+.col-5 {
   padding-right: 0;
 }
 .main {
@@ -77,10 +77,10 @@ a {
   padding-left: 8px;
   font-size: 14px;
 }
-.col-5 .unit .first {
+.col-4 .unit .first {
   color: #202124;
   cursor: default;
 }
-.col-5 .unit .first:hover {
+.col-4 .unit .first:hover {
   text-decoration: none;
 }

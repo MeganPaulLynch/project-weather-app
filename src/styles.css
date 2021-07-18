@@ -18,8 +18,8 @@ li:first-letter {
   text-transform: capitalize;
 }
 img {
-  width: 60px;
-  padding-right: 5px;
+  width: 120px;
+  padding: 0;
 }
 .card {
   margin-top: 30px;
@@ -42,7 +42,7 @@ img {
   font-size: 14px;
   color: #253761;
 }
-.col-4 {
+.col-5 {
   margin-top: 20px;
   text-align: center;
 }
@@ -50,6 +50,7 @@ img {
   color: #202124;
   line-height: 60px;
   font-size: 50px;
+  padding-left: 0;
 }
 .unit {
   font-size: 14px;

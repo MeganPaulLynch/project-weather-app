@@ -33,6 +33,7 @@ a {
 .card-body {
   margin-top: 10px;
   padding-right: 30px;
+  padding-bottom: 0;
 }
 .form-control {
   width: 30%;
@@ -45,7 +46,7 @@ a {
   font-size: 14px;
   color: #253761;
 }
-.col-4 {
+.col-7 {
   margin-top: 20px;
   padding: 0;
 }
@@ -62,25 +63,28 @@ a {
   font-size: 14px;
   color: #878787;
 }
-.col-3 {
-  border-left: 2px solid #878787;
-}
-.area {
-  padding: 5px 8px;
-  margin: 5px 8px;
-  font-size: 14px;
-  text-align: center;
-  color: #5a6275;
-  list-style: none;
-}
-.smaller {
-  padding-left: 8px;
-  font-size: 14px;
-}
-.col-4 .unit .first {
+.col-7 .unit .first {
   color: #202124;
   cursor: default;
 }
-.col-4 .unit .first:hover {
+.col-7 .unit .first:hover {
   text-decoration: none;
+}
+.col-2 {
+  margin: 15px 15px;
+  text-align: center;
+}
+.forecast-icon {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.forecast-temperature {
+  font-size: 12px;
+}
+.forecast-day {
+  font-size: 15px;
+}
+.temperature-min-forecast {
+  color: #878787;
 }

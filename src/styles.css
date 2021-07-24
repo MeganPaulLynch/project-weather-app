@@ -63,15 +63,8 @@ a {
   font-size: 14px;
   color: #878787;
 }
-.col-7 .unit .first {
-  color: #202124;
-  cursor: default;
-}
-.col-7 .unit .first:hover {
-  text-decoration: none;
-}
 .col-2 {
-  margin: 15px 15px;
+  margin: 0;
   text-align: center;
 }
 .forecast-icon {
@@ -91,7 +84,4 @@ a {
 .weather-forecast {
   margin-top: 10px;
   margin-bottom: 12px;
-}
-.col-2 {
-  margin: 0;
 }

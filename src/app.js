@@ -19,29 +19,43 @@ function formatDate(date) {
   }
   return `${currentDay} ${currentHour}:${currentMinutes}`;
 }
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
 function displayForecast(response) {
   console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let forecastDays = ["Mon", "Tue", "Wed", "Thu"];
   let forecastHTML = `<div class="row">`;
-  forecastDays.forEach(function (days) {
-    forecastHTML =
-      forecastHTML +
-      `  <div class="col-2">
-                    <div class="forecast-day">${days}</div>
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `  <div class="col-2">
+                    <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
                     <div class="forecast-icon">
                       <img
-                        src="http://openweathermap.org/img/wn/04d@2x.png"
+                        src="http://openweathermap.org/img/wn/${
+                          forecastDay.weather[0].icon
+                        }@2x.png"
                         alt="weather icon"
                         class="forecast-icon"
                       />
                     </div>
                     <div class="forecast-temperature">
-                      <span class="temperature-max-forecast">24º </span>
-                      <span class="temperature-min-forecast">19º</span>
+                      <span class="temperature-max-forecast">${Math.round(
+                        forecastDay.temp.max
+                      )} </span>
+                      <span class="temperature-min-forecast">${Math.round(
+                        forecastDay.temp.min
+                      )}</span>
                     </div>
                   </div>
                 `;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;

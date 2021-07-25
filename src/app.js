@@ -107,7 +107,7 @@ function currentLocation(event) {
 
 let findCity = document.querySelector("#searchForm");
 findCity.addEventListener("submit", search);
-let formattedDate = document.querySelector("#update");
+let formattedDate = document.querySelector("#date-time");
 let date = new Date();
 formattedDate.innerHTML = formatDate(date);
 let currentButton = document.querySelector("#current-location");

@@ -17,15 +17,12 @@ ul {
 li:first-letter {
   text-transform: capitalize;
 }
-img {
-  width: 90px;
-  padding: 0;
-}
 a {
   text-decoration: none;
 }
 .card {
   margin-top: 30px;
+  margin-bottom: 8px;
   max-width: 630px;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgb(0 0 0 / 8%);

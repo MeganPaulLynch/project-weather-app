@@ -55,7 +55,7 @@ a {
 }
 .main {
   color: #202124;
-  line-height: 60px;
+  line-height: 1;
   font-size: 50px;
   padding: 0;
 }
@@ -84,4 +84,10 @@ a {
 .weather-forecast {
   margin-top: 10px;
   margin-bottom: 12px;
+}
+.main-weather {
+  text-align: center;
+}
+.main-weather img {
+  width: 120px;
 }

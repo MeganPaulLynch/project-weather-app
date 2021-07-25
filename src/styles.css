@@ -87,4 +87,5 @@ a {
 }
 .main-weather img {
   width: 120px;
+  padding: 0;
 }
